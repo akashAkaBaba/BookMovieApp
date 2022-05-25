@@ -1,0 +1,58 @@
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
+
+.movie-poster {
+    height: 100%;
+    width: auto;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container>div {
+    margin: 18px;
+}
+
+.left {
+    width: 76%;
+}
+
+.right {
+    padding-top: 20px;
+    width: 24%;
+}
+
+.released-movie-grid-item {
+    margin: 18px;
+}
+
+@media (max-width: 980px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 90%;
+    }
+    .released-movie-grid-item {
+        margin: 6px;
+    }
+}
